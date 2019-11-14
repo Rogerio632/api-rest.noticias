@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize';
-import databaseConfig from '../database.js';
+import databaseConfig from '../database';
 import Noticia from '../../app/models/Noticia';
 import User from '../../app/models/User';
 
