@@ -1,3 +1,4 @@
+import * as Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
@@ -15,6 +16,26 @@ class UserController {
   }
 
   async store(req, res) {
+    const schema = Yup.object().shape({
+      email: Yup.string()
+        .email()
+        .required(),
+      password: Yup.string()
+        .min(6)
+        .required(),
+      confirm_password: Yup.string()
+        .required()
+        .when('password', (password, field) =>
+          password ? field.required().oneOf([Yup.ref('password')]) : field
+        ),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res
+        .status(400)
+        .json({ error: 'Algo está errado. Digite novamente, sim?' });
+    }
+
     const { email } = req.body;
 
     const emailExists = await User.findOne({ where: { email } });
