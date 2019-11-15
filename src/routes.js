@@ -2,12 +2,14 @@ import { Router } from 'express';
 import NoticiaController from './app/controllers/NoticiaController';
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
+import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
 
 /* -- Autenticação de Usuário -- */
 routes.post('/sessions', SessionController.store);
 
+routes.use(authMiddleware);
 /* Rotas para o controller de Notícias */
 routes.get('/noticia', NoticiaController.show);
 routes.get('/noticias', NoticiaController.index);
