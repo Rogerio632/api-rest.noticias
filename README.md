@@ -1,17 +1,17 @@
 # API Rest de Notícias em NodeJS
 
 ### Funcionalidades:
-#### Cadastrar:
+###### Cadastrar:
 	 Usuário
 	 Notícia
-#### Listar:
+###### Listar:
 	Usuário
 	Notícia
-#### Listar Específico:
+###### Listar Específico:
 	 Notícia
-#### Atualizar:
+###### Atualizar:
 	Notícia
-#### Deletar:
+###### Deletar:
 	Notícia
 
 #### Principais dependências utilizadas para o desenvolvimento:
