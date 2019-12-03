@@ -1,5 +1,10 @@
 # API Rest de Notícias em NodeJS
 
+### Descrição:
+
+Esta API possui as quatro operações básicas(Create, Read, Update e Delete), além de uma autenticação com retorno de token. Sua finalidade é, além de agregar conhecimento, concluir algumas atividades passadas no bootcamp Gostack, da RocketSeat.
+
+
 ### Funcionalidades:
 ###### Cadastrar:
 	 Usuário
@@ -26,14 +31,12 @@
    Prettier <br>
 	
 ### Quero testar! O que eu faço?
-
-- É simples. Você vai precisar ter em seu computador
-  alguns programas instalados.
+É simples. Você vai precisar ter em seu computador alguns programas instalados.
 	
 	Para Windows:
 	
 ###### O próprio node.js:
-	Indo no site oficial do node(https://nodejs.org/en/) faça o download e o instale.
+Indo no site oficial do node(https://nodejs.org/en/) faça o download e o instale.
 
 ###### O Yarn:
 Ao invés do npm, utilizo o yarn como gerenciador de pacotes. Sabendo disso, siga o passo-a-passo disponibilizado neste link
