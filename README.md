@@ -20,23 +20,23 @@ Esta API possui as quatro operações básicas(Create, Read, Update e Delete), a
 	Notícia
 
 #### Principais dependências utilizadas para o desenvolvimento:
-    Express 
-	 Sequelize 
-	 Bcryptjs 
-    Jsonwebtoken 
-	 Sucrase 
-    Pg 
-    Yup 
-	  Eslint 
-    Prettier 
+     Express 
+	   Sequelize 
+	   Bcryptjs 
+     Jsonwebtoken 
+	   Sucrase 
+     Pg 
+     Yup 
+	   Eslint 
+     Prettier 
 	
 #### Ferramentas Utilizadas para o desenvolvimento e teste:
-    Node.js
-    Yarn
-    Docker
-    PostgreSQL
-    Insomnia
-    Postbird
+     Node.js
+     Yarn
+     Docker
+     PostgreSQL
+     Insomnia
+     Postbird
 
 
 
